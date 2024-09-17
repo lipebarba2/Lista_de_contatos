@@ -1,7 +1,9 @@
 import express from 'express'
+import { write } from 'fs'
 import { readFile, writeFile } from 'fs/promises'
 
 const dataSource = './data/list.txt'
+
 
 export const getContacts = async () => {
     let list: string[] = []
